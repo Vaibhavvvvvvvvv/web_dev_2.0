@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Form = () => {
+const About = () => {
     function formHandler(e) {
         e.preventDefault(); 
         let form = e.target;
@@ -11,6 +11,7 @@ const Form = () => {
 
     return (
         <div>
+            <h1>Form handling</h1>
             <form onSubmit={formHandler}> 
                 <label htmlFor="email">Email</label> 
                 <input type="email" placeholder="Enter email" name="email" /> 
@@ -24,4 +25,4 @@ const Form = () => {
     );
 }
 
-export default Form;
+export default About;
